@@ -129,7 +129,7 @@ $ curl http://<host>:8080/api/payment/metrics
 #steps for running
 az --version
 az group create --name Myresourcegroup --location southindia
-az aks create --resource-group Myresourcegroup --name myAKSCluster --node-count 2 --generate-ssh-keys --node-vm-size 'Standa...
+az aks create --resource-group Myresourcegroup --name myAKSCluster --node-count 2 --generate-ssh-keys --node-vm-size 'Standard_B2s'
 az aks get-credentials --resource-group Myresourcegroup --name myAKSCluster --overwrite-existing
 kubectl create ns robot-shop
 choco install kubernetes-helm (if helm not installed)
